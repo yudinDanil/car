@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+                <header>
+<nav>
+                <div class="logo">ВСЕ О АВТО</div>
+
+                
+<center>
+                    <a href="index.html">Главная</a>
+
+                    <a href="index3.html">Топ-10 моделей C сегмента</a>
+
+                    <a href="index4.html">О нас</a>
+</center>
+                </nav>
+
+            </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоМаркет — Лизинг и Аренда</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">МАШИНЫ<span>.</span></div>
+        <nav class="tabs">
+            <div class="tab active" data-cat="all">Все доступные машины</div>
+            <div class="tab" data-cat="leasing">Машины в лизинге</div>
+            <div class="tab" data-cat="rent">Аренда машины</div>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <!-- Сетка для карточек -->
+    <div id="cars-grid" class="grid"></div>
+
+    <!-- Информационная карточка владельца -->
+    <section class="contact-section">
+        <div class="contact-card">
+            <h2>Связаться с владельцем</h2>
+            <div class="owner-info">
+                <div class="info-group">
+                    <label>ФИО Владельца</label>
+                    <p>Юдин Данил Николаевич</p>
+                </div>
+                <div class="info-group">
+                    <label>Телефон</label>
+                    <p>+7 (953) 034-22-92</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- БЛОК ДАННЫХ: Здесь можно менять фото и характеристики -->
+<script id="cars-data" type="application/json">
+[
+    {"cat": "leasing", "name": "Lada Vesta SW Cross", "img": "img/30.jpg", "price": "28 500 ₽/мес", "hp": "106 л.с.", "vol": "1.6 л", "drive": "Передний", "trans": "МКПП", "year": "2023", "trim": "Enjoy"},
+
+    {"cat": "leasing", "name": "Lada Granta Drive Active", "img": "img/31.jpg", "price": "19 800 ₽/мес", "hp": "90 л.с.", "vol": "1.6 л", "drive": "Передний", "trans": "МКПП", "year": "2023", "trim": "Comfort"},
+    {"cat": "leasing", "name": "Haval Jolion", "img": "img/32.jpg", "price": "42 000 ₽/мес", "hp": "143 л.с.", "vol": "1.5 л", "drive": "Передний", "trans": "Робот", "year": "2024", "trim": "Elite"},
+    {"cat": "leasing", "name": "Geely Coolray", "img": "img/33.jpg", "price": "45 500 ₽/мес", "hp": "150 л.с.", "vol": "1.5 л", "drive": "Передний", "trans": "Робот", "year": "2023", "trim": "Flagship"},
+    {"cat": "leasing", "name": "Lada Niva Travel", "img": "img/34.jpg", "price": "22 300 ₽/мес", "hp": "80 л.с.", "vol": "1.7 л", "drive": "Полный", "trans": "МКПП", "year": "2023", "trim": "Luxe"},
+    {"cat": "leasing", "name": "Omoda S5", "img": "img/35.jpg", "price": "39 000 ₽/мес", "hp": "113 л.с.", "vol": "1.5 л", "drive": "Передний", "trans": "Вариатор", "year": "2023", "trim": "Life"},
+    {"cat": "leasing", "name": "Chery Tiggo 4 Pro", "img": "img/36.jpg", "price": "36 200 ₽/мес", "hp": "113 л.с.", "vol": "1.5 л", "drive": "Передний", "trans": "Вариатор", "year": "2024", "trim": "Family"},
+    {"cat": "leasing", "name": "Lada Largus", "img": "img/37.jpg", "price": "25 000 ₽/мес", "hp": "106 л.с.", "vol": "1.6 л", "drive": "Передний", "trans": "МКПП", "year": "2022", "trim": "Comfort"},
+    
+    {"cat": "rent", "name": "Lada Vesta Sedane", "img": "img/38.jpg", "price": "3 200 ₽/сут", "hp": "106 л.с.", "vol": "1.6 л", "drive": "Передний", "trans": "МКПП", "year": "2022", "trim": "Luxe"},
+    {"cat": "rent", "name": "Lada Granta FL", "img": "img/39.jpg", "price": "2 100 ₽/сут", "hp": "90 л.с.", "vol": "1.6 л", "drive": "Передний", "trans": "МКПП", "year": "2023", "trim": "Classic"},
+    {"cat": "rent", "name": "Hyundai Solaris", "img": "img/40.jpg", "price": "3 800 ₽/сут", "hp": "123 л.с.", "vol": "1.6 л", "drive": "Передний", "trans": "АКПП", "year": "2021", "trim": "Elegance"},
+    {"cat": "rent", "name": "Kia Rio", "img": "img/41.jpg", "price": "3 900 ₽/сут", "hp": "123 л.с.", "vol": "1.6 л", "drive": "Передний", "trans": "АКПП", "year": "2022", "trim": "Prestige"},
+    {"cat": "rent", "name": "Volkswagen Polo", "img": "img/42.jpg", "price": "3 700 ₽/сут", "hp": "110 л.с.", "vol": "1.6 л", "drive": "Передний", "trans": "АКПП", "year": "2021", "trim": "Status"},
+    {"cat": "rent", "name": "Skoda Rapid", "img": "img/43.jpg", "price": "3 850 ₽/сут", "hp": "110 л.с.", "vol": "1.6 л", "drive": "Передний", "trans": "АКПП", "year": "2021", "trim": "Ambition"},
+    {"cat": "rent", "name": "Renault Logan", "img": "img/44.jpg", "price": "2 800 ₽/сут", "hp": "102 л.с.", "vol": "1.6 л", "drive": "Передний", "trans": "АКПП", "year": "2021", "trim": "Life"},
+    {"cat": "rent", "name": "Chery Tiggo 7 Pro", "img": "img/45.jpg", "price": "5 500 ₽/сут", "hp": "147 л.с.", "vol": "1.5 л", "drive": "Передний", "trans": "Вариатор", "year": "2023", "trim": "Elite"},
+    {"cat": "rent", "name": "Geely Emgrand", "img": "img/46.jpg", "price": "3 500 ₽/сут", "hp": "122 л.с.", "vol": "1.5 л", "drive": "Передний", "trans": "АКПП", "year": "2024", "trim": "Flagship"},
+    {"cat": "rent", "name": "Lada XRAY Cross", "img": "img/47.jpg", "price": "3 400 ₽/сут", "hp": "122 л.с.", "vol": "1.8 л", "drive": "Передний", "trans": "МКПП", "year": "2021", "trim": "Luxe"}
+]
+</script>
+
+<script src="script2.js"></script>
+</body>
+</html>

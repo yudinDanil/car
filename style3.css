@@ -1,0 +1,244 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Основной цвет страницы - яркий салатовый/лаймовый */
+    color: #070707; /* Темный текст на светлом фоне */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #070707; /* Черный фон для хедера */
+    text-align: center;
+    padding: 40px 20px;
+}
+.logo{
+    color:#ccff00;
+    font-size:30px;
+    font-weight:bold;
+    text-shadow:0 0 10px #ccff00;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:0.3s;
+}
+header h1 {
+    color: #ccff00; /* Ярко-зеленый заголовок */
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #ccff00;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #cccccc; /* Светло-серый для подзаголовка */
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    flex-grow: 1;
+}
+
+.car-card {
+    background-color: #070707; /* Черный фон карточки */
+    border: 3px solid #ccff00; /* Ярко-зеленая рамка */
+    border-radius: 10px;
+    padding: 25px; /* Увеличил паддинг для более плотного вида */
+    width: 270px; /* Немного уменьшил ширину для лучшего вида на десктопе */
+    text-align: center;
+    box-shadow: 0 0 15px #ccff00(0, 255, 0, 0.5); /* Зеленое свечение */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.car-card img {
+    max-width: 100%;
+    height: 170px; /* Немного уменьшил высоту изображения */
+    object-fit: cover;
+    border-radius: 7px; /* Чуть скругленные углы */
+    margin-bottom: 15px;
+    border: 1px solid #ccff00; /* Тонкая зеленая обводка изображения */
+}
+
+.car-card h2 {
+    color: #ccff00;
+    font-size: 1.6em; /* Увеличил размер */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.car-card p {
+    font-size: 0.98em; /* Чуть больше шрифт */
+    margin-bottom: 7px;
+    color: #dddddd;
+}
+
+.car-card p strong {
+    color: #ffffff;
+}
+
+.details-button {
+    display: inline-block; /* Используем inline-block для более точного контроля */
+    padding: 12px 25px; /* Увеличил паддинг */
+    background-color: #ccff00; /* Ярко-зеленая кнопка */
+    color: #070707; /* Темный текст */
+    text-decoration: none;
+    border-radius: 6px; /* Чуть скругленные */
+    font-weight: bold;
+    font-size: 1.15em; /* Увеличил размер шрифта */
+    letter-spacing: 0.5px; /* Небольшое раздвижение букв */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: auto;
+    border: 2px solid #ccff00; /* Зеленая обводка кнопки */
+}
+
+.details-button:hover {
+    background-color: #ccff00; /* Светлее зеленый */
+    transform: translateY(-3px); /* Чуть сильнее приподнимаем */
+    box-shadow: 0 6px 12px #ccff00(0, 255, 0, 0.5); /* Увеличенная тень */
+    border-color: #ccff00;
+}
+
+.details-button:active {
+    transform: translateY(0px); /* Кнопка "вдавливается" */
+    box-shadow: 0 3px 6px #ccff00(0, 255, 0, 0.4);
+}
+
+
+.interesting-facts {
+    background-color: #070707; /* Черный фон блока */
+    margin: 40px 20px;
+    padding: 30px;
+    border: 3px solid #ccff00; /* Ярко-зеленая рамка */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.interesting-facts h2 {
+    color: #ccff00;
+    text-align: center;
+    font-size: 2.2em; /* Увеличил размер */
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.interesting-facts ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.interesting-facts li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.7; /* Увеличил межстрочный интервал */
+    color: #dddddd; /* Более светлый серый текст */
+    padding-left: 25px; /* Добавил место для точки */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.interesting-facts li::before {
+    content: '•'; /* Точка вместо галочки */
+    color: #ccff00; /* Зеленая точка */
+    font-weight: bold;
+    font-size: 1.4em; /* Увеличил размер точки */
+    position: absolute;
+    left: 0;
+    top: -2px; /* Немного подкорректировал позицию */
+}
+
+.interesting-facts li:hover {
+    color: #ffffff; /* Текст становится белым при наведении */
+}
+
+.interesting-facts li strong {
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 25px; /* Увеличил паддинг */
+    margin-top: auto;
+    background-color: #070707; /* Черный фон футера */
+    color: #777777;
+    font-size: 0.95em; /* Чуть крупнее шрифт */
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .car-card {
+        width: 280px; /* На больших экранах могут быть чуть шире */
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .car-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .interesting-facts {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .interesting-facts h2 {
+        font-size: 1.8em;
+    }
+
+    .interesting-facts li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Базовый шрифт для моб. устройств */
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .car-card img {
+        height: 150px;
+    }
+
+    .details-button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+     .interesting-facts h2 {
+        font-size: 1.5em;
+    }
+
+    .interesting-facts li {
+        font-size: 0.95em;
+        padding-left: 20px;
+    }
+
+    .interesting-facts li::before {
+         font-size: 1.2em;
+    }
+}

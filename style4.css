@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* По умолчанию центрируем текст */
+}
+
+header {
+    padding: 20px 0;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #ccff00, #ccff00); /* Градиент от желтого к оранжевому */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Располагаем ссылки в строку */
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ccff00; /* Изменяем цвет при наведении */
+}
+
+/* УДАЛЕН БЛОК .separator, который отвечал за градиентную полосу */
+
+main {
+    padding: 40px 20px;
+}
+
+.about-us {
+    max-width: 800px; /* Ограничиваем ширину основного контента */
+    margin: 0 auto; /* Центрируем блок */
+    text-align: left; /* Выравниваем текст внутри блока по левому краю */
+}
+
+.about-us h2 {
+    color: #ccff00;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center; /* Центрируем заголовок раздела */
+}
+
+.about-us p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; /* Выравниваем текст по ширине */
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #111;
+    color: #aaa;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
